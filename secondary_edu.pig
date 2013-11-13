@@ -3,7 +3,7 @@
 
 
 -- Load the data
-data = LOAD '/user/albert/data_sets/sec_edu.csv' 
+data = LOAD '/user/albert/sec_edu.csv' 
 	USING PigStorage(',')
 	AS (country:chararray, subgroup:chararray, year:chararray, source:chararray,
 		unit:chararray, value:chararray, value_footnotes:chararray);
